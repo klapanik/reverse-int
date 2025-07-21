@@ -1,3 +1,4 @@
-module.exports = function reverse(number) {
+const reverse = (number) =>
+  +number.toString().replace('-', '').split('').reverse().join('');
 
-};
+module.exports = reverse;
